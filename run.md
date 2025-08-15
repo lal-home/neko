@@ -1,5 +1,7 @@
-./build -r laoji/neko
-./build -r laoji/neko -a chromium
+docker rmi laoji/neko/base
+docker rmi laoji/neko/chromium
+./build -r laoji/neko -y
+./build -r laoji/neko -a chromium -y
 
-docker-compose up -d 
+docker-compose up -d
 docker-compose down

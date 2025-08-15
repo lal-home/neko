@@ -11,6 +11,7 @@ services:
     environment:
       HTTP_PROOXY: 'host.docker.internal:7890'
       HTTPS_PROOXY: 'host.docker.internal:7890'
+      # ALL_PROXY: "socks5://lalhome:Lalfc%40123@34.132.34.26:23080"
       NEKO_DESKTOP_SCREEN: '1920x1080@30'
       NEKO_MEMBER_MULTIUSER_USER_PASSWORD: lal
       NEKO_MEMBER_MULTIUSER_ADMIN_PASSWORD: Lalfc@123
