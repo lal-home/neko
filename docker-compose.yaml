@@ -1,6 +1,6 @@
 services:
   neko:
-    image: "ghcr.io/m1k1o/neko/chromium:latest"
+    image: "laoji/neko/chromium:latest"
     restart: "unless-stopped"
     shm_size: "4gb"
     cap_add:
@@ -16,5 +16,7 @@ services:
       NEKO_MEMBER_MULTIUSER_ADMIN_PASSWORD: Lalfc@123
       NEKO_WEBRTC_EPR: 52000-52100
       NEKO_WEBRTC_ICELITE: 1
-      # NEKO_WEBRTC_NAT1TO1: 192.168.137.1
       NEKO_WEBRTC_NAT1TO1: 159.75.6.191
+      NEKO_FILETRANSFER_ENABLED: true
+      NEKO_FILETRANSFER_DIR: "./uploads"
+      NEKO_FILETRANSFER_REFRESH_INTERVAL: "30s"

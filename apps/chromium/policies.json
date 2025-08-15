@@ -12,29 +12,27 @@
   "BrowserAddPersonEnabled": false,
   "BrowserGuestModeEnabled": false,
   "DefaultPopupsSetting": 2,
-  "DownloadRestrictions": 3,
+  "DownloadRestrictions": 0,
   "VideoCaptureAllowed": true,
-  "AllowFileSelectionDialogs": false,
-  "PromptForDownloadLocation": false,
+  "AllowFileSelectionDialogs": true,
+  "PromptForDownloadLocation": true,
   "BookmarkBarEnabled": false,
   "PasswordManagerEnabled": false,
   "BrowserLabsEnabled": false,
-  "URLAllowlist": [
-    "file:///home/neko/Downloads"
-  ],
-  "URLBlocklist": [
-      "file://*",
-      "chrome://policy"
-  ],
+  "URLAllowlist": ["file:///home/neko/Downloads", "https://*", "http://*"],
+  "URLBlocklist": [],
   "ExtensionInstallForcelist": [
-      "cjpalhdlnbpafiamejdnhcphjbkeiagm;https://clients2.google.com/service/update2/crx",
-      "mnjggcdmjocbbbhaepdhchncahnbgone;https://clients2.google.com/service/update2/crx"
+    "cjpalhdlnbpafiamejdnhcphjbkeiagm;https://clients2.google.com/service/update2/crx",
+    "mnjggcdmjocbbbhaepdhchncahnbgone;https://clients2.google.com/service/update2/crx"
   ],
   "ExtensionInstallAllowlist": [
-      "cjpalhdlnbpafiamejdnhcphjbkeiagm",
-      "mnjggcdmjocbbbhaepdhchncahnbgone"
+    "cjpalhdlnbpafiamejdnhcphjbkeiagm",
+    "mnjggcdmjocbbbhaepdhchncahnbgone"
   ],
-  "ExtensionInstallBlocklist": [
-      "*"
+  "ExtensionInstallBlocklist": [],
+  "ExtensionInstallSources": [
+    "https://chrome.google.com/webstore/detail/*",
+    "https://clients2.google.com/service/update2/crx",
+    "file:///*.crx"
   ]
 }
