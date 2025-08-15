@@ -2,10 +2,6 @@
   <div class="about" @click="toggle">
     <div class="window">
       <div class="loading" v-if="loading">
-        <div class="logo">
-          <img src="@/assets/images/logo.svg" alt="n.eko" />
-          <span><b>N</b>.EKO</span>
-        </div>
         <div class="loader">
           <div class="bounce1"></div>
           <div class="bounce2"></div>
